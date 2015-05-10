@@ -1,6 +1,7 @@
 {
     "appKeys": {
-        "dummy": 0
+        "KEY_BEAT": 1,
+        "KEY_OXYGEN": 0
     },
     "capabilities": [
         ""

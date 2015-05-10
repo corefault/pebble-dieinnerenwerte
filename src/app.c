@@ -49,6 +49,7 @@ static void inbox_received_callback(DictionaryIterator *iterator, void *context)
     // Look for next item
     t = dict_read_next(iterator);
   }
+   APP_LOG(APP_LOG_LEVEL_INFO, "ox: %s, pulse: %s", s_tspo, s_tbeat);
   update_main(s_tspo, s_tbeat);
 }
 //-----------------------------------------------------------------------
