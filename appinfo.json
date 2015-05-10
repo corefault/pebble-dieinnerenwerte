@@ -1,19 +1,26 @@
 {
-  "uuid": "364853a0-6d29-4c4f-bf7e-d9bd6cf4ed2f",
-  "shortName": "pebble-dieinnerenwerte",
-  "longName": "pebble-dieinnerenwerte",
-  "companyName": "MakeAwesomeHappen",
-  "versionCode": 1,
-  "versionLabel": "1.0",
-  "sdkVersion": "3",
-  "targetPlatforms": ["aplite", "basalt"],
-  "watchapp": {
-    "watchface": false
-  },
-  "appKeys": {
-    "dummy": 0
-  },
-  "resources": {
-    "media": []
-  }
+    "appKeys": {
+        "dummy": 0
+    },
+    "capabilities": [
+        ""
+    ],
+    "companyName": "corefault",
+    "longName": "pebble-dieinnerenwerte",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "pebble-dieinnerenwerte",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "364853a0-6d29-4c4f-bf7e-d9bd6cf4ed2f",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
 }

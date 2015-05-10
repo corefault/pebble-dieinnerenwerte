@@ -12,15 +12,16 @@ static TextLayer *s_textlayer_1;
 static void initialise_ui(void) {
   s_window = window_create();
   window_set_background_color(s_window, GColorBlack);
+#ifdef PBL_PLATFORM_APLITE
   window_set_fullscreen(s_window, true);
-  
+#endif 
   s_res_bitham_30_black = fonts_get_system_font(FONT_KEY_BITHAM_30_BLACK);
   s_res_droid_serif_28_bold = fonts_get_system_font(FONT_KEY_DROID_SERIF_28_BOLD);
   // s_spo
   s_spo = text_layer_create(GRect(0, 60, 64, 35));
   text_layer_set_background_color(s_spo, GColorBlack);
   text_layer_set_text_color(s_spo, GColorWhite);
-  text_layer_set_text(s_spo, "100");
+  text_layer_set_text(s_spo, "---");
   text_layer_set_text_alignment(s_spo, GTextAlignmentRight);
   text_layer_set_font(s_spo, s_res_bitham_30_black);
   layer_add_child(window_get_root_layer(s_window), (Layer *)s_spo);
@@ -29,7 +30,7 @@ static void initialise_ui(void) {
   s_beat = text_layer_create(GRect(77, 60, 63, 35));
   text_layer_set_background_color(s_beat, GColorBlack);
   text_layer_set_text_color(s_beat, GColorWhite);
-  text_layer_set_text(s_beat, "100");
+  text_layer_set_text(s_beat, "---");
   text_layer_set_text_alignment(s_beat, GTextAlignmentRight);
   text_layer_set_font(s_beat, s_res_bitham_30_black);
   layer_add_child(window_get_root_layer(s_window), (Layer *)s_beat);
